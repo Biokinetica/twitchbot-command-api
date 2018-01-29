@@ -1,0 +1,1 @@
+web: java -jar target/java-twitch-api-1.0.jar

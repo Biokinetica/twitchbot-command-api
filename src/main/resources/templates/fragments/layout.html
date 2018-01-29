@@ -1,0 +1,33 @@
+<!doctype html>
+<html th:fragment="layout (template, menu)">
+<head>
+    <title>Java Getting Started on Heroku</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center text-info">
+				Twitch Chat Command API
+			</h3>
+			<p class="text-primary text-center">
+			</p>
+			<h2>
+				Hey, how's it going? This is an api for twitch chat commands. Use the $readapi() command for the endpoints in Streamlabs chatbot.
+			</h2>
+			<p>The endpoints are currently:</p>
+			<ul>
+				<li>/weather - https://twitch-command-api.herokuapp.com/weather/?city=$msg</li>
+				<li>/movie - https://twitch-command-api.herokuapp.com/movie?title=$msg</li>
+				<li>/time - https://twitch-command-api.herokuapp.com/time/?city=$target&amp;region=$target2</li>
+			</ul>
+<p class="text-primary text-center"> The movie endpoint can take a movie title and year, or just the title. The weather endpoint will take the city and region, or try it's best with city and country. Everything is case-insensitive. Just use spaces between words and type naturally!</p>
+<p class="text-secondary text-left">The weather endpoint can take the option -fc for forecast. It will get the high and low for the specified day. Example: !weather -fc Tue boden norrbotten</p>
+			<p class="text-secondary text-left">The movie endpoint can also take -cast or -plot as options. For example: !movie -cast Marshall 2017</p>
+		</div>
+	</div>
+</div>
+</body>
