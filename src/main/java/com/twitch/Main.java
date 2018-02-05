@@ -50,14 +50,15 @@ import com.omertron.omdbapi.model.OmdbVideoBasic;
 import com.omertron.omdbapi.model.OmdbVideoFull;
 import com.omertron.omdbapi.model.SearchResults;
 import com.omertron.omdbapi.tools.OmdbBuilder;
-import com.omertron.omdbapi.tools.OmdbParameters;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.xml.bind.JAXBException;
+
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.xml.bind.JAXBException;
 
 @Controller
 @SpringBootApplication
